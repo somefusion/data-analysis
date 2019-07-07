@@ -1,8 +1,8 @@
 一、更改Jupyter notebook的工作空间
 
-进入工作目录文件夹
-键盘Shift+鼠标右键->在此处打开命令窗口-> 在弹出的命令窗口中输入：Jupyter Notebook 
-Jupyter被打开，定位到当前目录！
+1、右键属性修改了快捷方式的起始位置，发现并不能修改默认路径。
+
+2、后来发现“目标”中后面有个参数%USERPROFILE%，很明显这个决定了目录，将这个参数删除改成了”D:\jupyter_learn”，然后就可以了，记得带上双引号。也就是目标和起始位置的路径是一样的,一定要把目标后面的参数%USERPROFILE%替换掉!!!!!
 
 二、Jupyter的各种快捷键
 执行当前cell，并自动跳到下一个cell：Shift Enter
